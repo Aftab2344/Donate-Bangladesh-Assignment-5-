@@ -23,6 +23,22 @@ function totalDonate(id){
     return currentAmountNumber;
 }
 
+// modal function
+
+function modalPrompt(id){
+    const modal = document.getElementById('donationModal');
+    
+    modal.style.display = 'block';
+    document.getElementById('donationModal').addEventListener('click',function(){
+        modal.style.display="none";
+    })
+    
+    window.addEventListener('click',function(event){
+        if (event.target == modal) {
+            modal.style.display = 'none';
+          }
+    })
+}
 
 
 
@@ -35,6 +51,4 @@ function totalDonate(id){
 
 
 
-// practise js -----------------------------------
-const now = new Date();
-console.log(now);  // Outputs current date and time
+

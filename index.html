@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate Bangladesh</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     <!-- header section -->
@@ -22,7 +23,7 @@
         </div>
         </nav>
         <!-- Button part -->
-        <div class="flex justify-center gap-4 mt-5">
+        <div class="flex justify-center backdrop-blur-sm gap-4  py-5">
             <!-- <button id="donation-btn" class="bg-[#B4F461] font-bold px-8 py-3 rounded-xl">Donation</button> -->
             <button id="donation-btn" class=" bg-[#B4F461] font-bold border-2 border-gray-300 px-8 py-3 rounded-xl">Donation</button>
             <button id="history-btn" class="text-gray-500  font-bold border-2 border-gray-300 px-8 py-3 rounded-xl ">History</button>
@@ -93,6 +94,26 @@
                     </div>
                 </div>
              </div>
+                        <!-- Modal Structure -->
+                    <div id="donationModal" class="modal">
+                        <div class="modal-content">
+                          <h2 class="font-bold text-3xl">Congrats!</h2>
+                          <div class="flex justify-center my-4">
+                            <img  src="./assets/coin.png" alt="Icon" class="modal-icon " />
+                          </div>
+                          <p>You Have Donated for Humankind</p>
+                          <strong>Successfully</strong>
+                          <br>
+                          <button id="closeModal" class="close-button">close confirmation</button>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
     </main>
    
      <main id="history-section" class="hidden">

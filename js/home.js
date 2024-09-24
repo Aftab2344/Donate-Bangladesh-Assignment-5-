@@ -38,7 +38,7 @@ document.getElementById('donate-btn-one').addEventListener('click',function(){
     const div=document.createElement('div');
     div.innerHTML=`
     <p class="font-bold text-[20px] mb-4 "> ${inputAmount} Taka is donated for  Flood at Noakhali, Bangladesh. </p>
-    date:${donationTime} `
+    Date:${donationTime} `
     div.classList.add('border-2','border-gray-100', 'px-12','py-6' ,'text-start','rounded-xl' )
     document.getElementById('history-container').appendChild(div);
 })
@@ -72,7 +72,7 @@ document.getElementById('donate-btn-two').addEventListener('click',function(){
     const div=document.createElement('div');
     div.innerHTML=`
     <p class="font-bold text-[20px] mb-4 "> ${inputAmount} Taka is donated for Flood Relief in Feni,Bangladesh. </p>
-    date:${donationTime} `
+    Date:${donationTime} `
     div.classList.add('border-2','border-gray-100', 'px-12','py-6' ,'text-start','rounded-xl' )
     document.getElementById('history-container').appendChild(div);
 })
@@ -106,7 +106,7 @@ document.getElementById('donate-btn-three').addEventListener('click',function(){
     const div=document.createElement('div');
     div.innerHTML=`
     <p class="font-bold text-[20px] mb-4 "> ${inputAmount} Taka is donated for Aid for Injured in the Quota Movement. </p>
-    date:${donationTime} `
+    Date:${donationTime} `
     div.classList.add('border-2','border-gray-100', 'px-12','py-6' ,'text-start','rounded-xl' )
     document.getElementById('history-container').appendChild(div);
 })
@@ -128,4 +128,17 @@ document.getElementById('history-btn').addEventListener('click',function(){
 })
 
 
-// 
+// modal js
+
+// modal set for campaign one button 
+document.getElementById('donate-btn-one').addEventListener('click',function(){
+    modalPrompt('donate-btn-one')
+})
+// modal set for campaign two button 
+document.getElementById('donate-btn-two').addEventListener('click',function(){
+    modalPrompt('donate-btn-two')
+})
+// modal set for campaign three button 
+document.getElementById('donate-btn-three').addEventListener('click',function(){
+    modalPrompt('donate-btn-three')
+})
