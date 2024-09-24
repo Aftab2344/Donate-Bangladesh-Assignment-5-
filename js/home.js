@@ -128,6 +128,7 @@ document.getElementById('history-btn').addEventListener('click',function(){
 })
 
 
+
 // modal js
 
 // modal set for campaign one button 
@@ -142,3 +143,33 @@ document.getElementById('donate-btn-two').addEventListener('click',function(){
 document.getElementById('donate-btn-three').addEventListener('click',function(){
     modalPrompt('donate-btn-three')
 })
+
+
+
+// FAQ section js
+
+
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+faqQuestions.forEach(question => {
+    question.addEventListener('click', function() {
+        // Toggle the answer's display when the question is clicked
+        const answer = this.nextElementSibling;
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+        } else {
+            answer.style.display = 'block';
+        }
+    });
+});
+
+// go to blog page
+document.getElementById('blog-page').addEventListener('click',function(){
+    window.location.href='./home.html';
+})
+// go to home page
+document.getElementById('home-page').addEventListener('click',function(){
+    window.location.href='./index.html';
+    console.log('hello')
+})
+

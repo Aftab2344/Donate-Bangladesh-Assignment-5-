@@ -3,100 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate Bangladesh</title>
+    <title>Blog</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
-    <!-- header section -->
     <header class="sticky top-0"> 
         <!-- nav bar section -->
         <nav class="flex justify-around items-center mt-3 bg-[#F9F7F3] py-7"> 
-        <button class="bg-[#B4F461] font-bold px-8 py-3 rounded-xl">Blog</button>      
-        <div class="flex items-center gap-x-2">
-            <img src="./assets/logo.png" alt="">
-            <p>Donate Bangladesh</p>
-        </div>
-        <div class="flex items-center gap-x-2">
-            <img src="./assets/coin.png" alt="">
-            <p> <span>5500 </span> BDT</p>
-        </div>
-        </nav>
-        <!-- Button part -->
-        <div class="flex justify-center gap-4 mt-5">
-            <button class="bg-[#B4F461] font-bold px-8 py-3 rounded-xl">Donation</button>
-            <button class="text-gray-500 border-2 border-gray-300 px-8 py-3 rounded-xl">History</button>
-        </div>
-
+            <a href="./index.html"><button id="home-page"  class="bg-[#B4F461] font-bold px-8 py-3 rounded-xl">Home</button></a>      
+            <div class="flex items-center gap-x-2">
+                <img src="./assets/logo.png" alt="">
+                <p>Donate Bangladesh</p>
+            </div>
+            <div class="flex items-center gap-x-2">
+                <img src="./assets/coin.png" alt="">
+                <p> <span id="account-balance">55000 </span> BDT</p>
+            </div>
+            </nav>
     </header>
-    <!-- body section -->
-    <main class="max-w-screen-lg mx-auto mt-20 space-y-12 mb-12">
-        <section class="">
-            <!-- card-1 -->
-             <!-- container -->
-             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- image part -->
-                <img src="./assets/noakhali.png" class="rounded-xl" alt="">
-                <!-- description part -->
-                <div class="space-y-5">
-                    <!-- Total Amount -->
-                    <div class="flex items-center gap-x-2">
-                        <img src="./assets/coin.png" alt="">
-                        <p> <span> 0 </span> BDT</p>
-                    </div>
-                    <h3 class="font-bold text-[20px] ">Donate for Flood at Noakhali, Bangladesh</h3>
-                    <p class="text-[#111111a2]"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                    <div class="flex flex-col space-y-4">
-                        <input type="text" placeholder="Write Donation Amount" class="border-2 border-gray-200 py-3 rounded-xl"  >
-                        <button class="bg-[#B4F461] font-bold px-8 py-3 rounded-xl">Donate Now</button>
-                    </div>
-                </div>
-             </div>
-            </section>
-            <!-- card-2 -->
-             <!-- container -->
-             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- image part -->
-                <img src="./assets/feni.png" class="rounded-xl" alt="">
-                <!-- description part -->
-                <div class="space-y-5">
-                    <!-- Total Amount -->
-                    <div class="flex items-center gap-x-2">
-                        <img src="./assets/coin.png" alt="">
-                        <p> <span> 600 </span> BDT</p>
-                    </div>
-                    <h3 class="font-bold text-[20px] ">Donate for Flood Relief in Feni,Bangladesh</h3>
-                    <p class="text-[#111111a2]"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
-                    <div class="flex flex-col space-y-4">
-                        <input type="text" placeholder="Write Donation Amount" class="border-2 border-gray-200 py-3 rounded-xl"  >
-                        <button class="bg-[#B4F461] font-bold px-8 py-3 rounded-xl">Donate Now</button>
-                    </div>
-                </div>
-             </div>
-            <!-- card-3 -->
-             <!-- container -->
-             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                <!-- image part -->
-                <img src="./assets/quota-protest.png" class="rounded-xl" alt="">
-                <!-- description part -->
-                <div class="space-y-5">
-                    <!-- Total Amount -->
-                    <div class="flex items-center gap-x-2">
-                        <img src="./assets/coin.png" alt="">
-                        <p> <span> 2400 </span> BDT</p>
-                    </div>
-                    <h3 class="font-bold text-[20px] ">Aid for Injured in the Quota Movement</h3>
-                    <p class="text-[#111111a2]">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
-                    <div class="flex flex-col space-y-4">
-                        <input type="text" placeholder="Write Donation Amount" class="border-2 border-gray-200 py-3 rounded-xl"  >
-                        <button class="bg-[#B4F461] font-bold px-8 py-3 rounded-xl">Donate Now</button>
-                    </div>
-                </div>
-             </div>
-    </main>
-    <!-- footer section -->
-    <footer>
+    <main class="mx-6 lg:mx-20">
+    <h1 class="font-bold text-4xl my-11">Important FAQ</h1>
 
-    </footer>
-<script src="./js/home.js"></script>    
+    <div class="faq-section" id="faq-question-one">
+        <p class="faq-question">What is the document object model(DOM)?</p>
+        <div class="faq-answer" id="faq-answer-one">
+            <p>A:The DOM (Document Object Model) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of objects, where each node corresponds to a part of the document (such as elements, attributes, and text). This allows programs and scripts to dynamically access, modify, add, or delete content and structure within a web page.</p>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <p class="faq-question">Q:How do You select an element from the DOM?</p>
+        <div class="faq-answer">
+            <p>A: For selecting element there is four way to select . getelementById, getelementByClassNames, querySelectorAll,querySelector</p>
+        </div>
+    </div>
+
+    <div class="faq-section">
+        <p class="faq-question">Q: What is event delegation in the context of dom , and why it is useful?</p>
+        <div class="faq-answer">
+            <p>A: Event delegation is a technique in the context of the DOM where a single event listener is attached to a parent element to manage events triggered by its child elements. Instead of adding event listeners to individual child elements, you delegate the event handling to a common ancestor. This takes advantage of event bubbling, where events propagate upwards from the target element to its parents, allowing the parent to "capture" the event</p>
+        </div>
+    </div>
+
+    <div class="faq-section"></div>
+        <p class="faq-question">Q: How do you manipulate on elements attributes and styles using the DOM?</p>
+        <div class="faq-answer">
+            <p>A: 
+                To manipulate attributes and styles in the DOM, use getAttribute(), setAttribute(), removeAttribute(), and hasAttribute() to access or modify element attributes like src, href, or alt. For styling, use the style property to modify inline CSS (e.g., element.style.backgroundColor = "blue"), or manage predefined styles using classList.add(), classList.remove(), and classList.toggle() to add, remove, or toggle CSS classes on elements efficiently. This allows dynamic control over both attributes and styles in response to user actions..</p>
+        </div>
+        </main>
+
+
 </body>
+<script>
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+faqQuestions.forEach(question => {
+    question.addEventListener('click', function() {
+        // Toggle the answer's display when the question is clicked
+        const answer = this.nextElementSibling;
+        if (answer.style.display === 'block') {
+            answer.style.display = 'none';
+        } else {
+            answer.style.display = 'block';
+        }
+    });
+});
+</script>
+<script src="./js/home.js"></script>
+<script src="./js/utilities.js"></script>
 </html>
