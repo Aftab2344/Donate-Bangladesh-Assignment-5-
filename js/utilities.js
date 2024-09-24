@@ -22,3 +22,19 @@ function totalDonate(id){
     const currentAmountNumber=parseFloat(currentAmount);
     return currentAmountNumber;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// practise js -----------------------------------
+const now = new Date();
+console.log(now);  // Outputs current date and time
